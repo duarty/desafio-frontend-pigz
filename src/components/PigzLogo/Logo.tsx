@@ -7,6 +7,8 @@ export const Icon = function({
     position, 
     padding, 
     top, 
+    width,
+    height,
     alignSelf,
     left, 
     right,
@@ -20,6 +22,8 @@ export const Icon = function({
             src={src}
             position={position} 
             top={top} 
+            width={width}
+            height={height}
             right={right}
             overflow={overflow}
             alignSelf={alignSelf}

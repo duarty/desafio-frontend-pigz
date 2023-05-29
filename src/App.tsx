@@ -205,17 +205,20 @@ function App() {
               </Container>
               <Container
                 flexdirection={'row'}
-                padding={'5rem 0rem 0rem 1rem'}
-                justifycontent={'center'}
+                padding={'5rem 5rem 5rem 5rem'}
+                justifycontent={'space-around'}
              
               >
                <Paragraph
                     text={'Fale com a Pigz'}
                     color={pigz.fonts.fontGrey1}
                     weight='500'
+                    alignItems={'flex-end'}
+                    justifyContent={'center'}
                     fontSize={'1.75rem'}
                 />
                 <Icon 
+                  padding='0rem 0rem 0rem 1rem'
                   src={WhatsAppIcon}
                 />
                 <Paragraph
@@ -226,10 +229,10 @@ function App() {
                     
                 />
                 <Paragraph
-                    text={'95 3224-2603'}
+                    text={'3224-2603'}
                     color={pigz.fonts.fontGrey1}
                     weight='500'
-                    fontSize={'1.25rem'}
+                    fontSize={'1.5rem'}
                     
                 />
               </Container>

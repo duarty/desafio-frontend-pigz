@@ -8,4 +8,7 @@ export interface IParagraphProps {
     fontSize?: string
     padding?: string
     textAlign?: string
+    alignItems?:string
+    justifyContent?: string
+    position?: string
 }

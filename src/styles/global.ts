@@ -15,6 +15,7 @@ export default createGlobalStyle`
         box-sizing: border-box;
         border: 0;
         font-family: 'Poppins', sans-serif;
+        outline:none;
         
     }
 

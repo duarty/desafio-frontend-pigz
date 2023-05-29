@@ -8,8 +8,9 @@ import { Label } from "../components/label/label";
 import { Paragraph } from "../components/paragraph/p";
 import pigz from "../styles/themes/orangeLabs";
 import BannerBuguer from "../assets/burguer_2.png";
-
+import BrFlagIcon from '../assets/1200px-Brazilian_flag_icon_round.svg.png'
 import { useState } from "react";
+import { Select } from "../components/select/select";
 
 export const FormPage = () => {
   const [form, setForm] = useState<number>(1);
@@ -114,21 +115,47 @@ export const FormPage = () => {
                     border={`0.065rem solid ${pigz.fonts.fontInputBorder}`}
                   />
                   <Label
-                    text={"E-mail"}
+                    text={"Telefone"}
                     weight={"500"}
                     color={pigz.fonts.fontGrey1}
                     fontSize={"1.2rem"}
                     padding={"2rem 0rem 0rem"}
                   />
-                  <Input
-                    backgroundcolor={pigz.colors.white}
-                    placeholder={"leonercio.goesfeeld@email.com"}
-                    fontSize={"1.5rem"}
-                    fontcolor={pigz.fonts.fontInputPlaceholder}
-                    padding={"1.2rem 1.7rem"}
-                    radius={"1.75rem"}
+                  <Select
+                    flexDirection="row"
                     border={`0.065rem solid ${pigz.fonts.fontInputBorder}`}
-                  />
+                    radius={"1.75rem "}
+                
+                    
+                  >
+                      <Select
+                        backgroundcolor="#F0F0F0"
+                        flexDirection="row"
+                        padding="1.25rem 2rem 1.25rem 2rem"
+                        radius={"1.5rem"}
+
+                      >
+                        <Icon
+                          src={BrFlagIcon}
+                          height="24rem"
+                          width="24rem"
+                        />
+                        <Paragraph
+                          padding="0.1rem 0rem 0rem 1rem"
+                          text="+55"
+                          color="#9F9F9F"
+                          fontSize="1.35rem"
+                        />
+                        
+                      </Select>
+                      <Input
+                          placeholder="(95) 99876-5432"
+                          padding="0rem 0rem 0rem 0rem"
+                          width="90%"
+                          radius={"1.75rem "}
+                          height="80%"
+                        />
+                  </Select>
 
                   <Paragraph
                     text={

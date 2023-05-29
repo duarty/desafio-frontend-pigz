@@ -11,7 +11,7 @@ export const IconContainer = styled.img<IIcon>`
         padding: ${props.padding};
         align-self: ${props.alignSelf};
         overflow: ${props.overflow};
-        z-index: ${props.zIndex}
+        z-index: ${props.zIndex};
     `}
     
 `

@@ -1,6 +1,7 @@
 
 export interface IContainerProps{
     backgroundcolor?: string
+    border?: string
     position?: string
     gradient?: string
     flexdirection?: string

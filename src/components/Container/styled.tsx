@@ -14,8 +14,9 @@ export const DivContainer = styled.div<IContainerProps>`
        margin: ${props.margin};
        align-items: ${props.alignItems};
        align-content: ${props.alignContent};
+       border: ${props.border}
        border-top: ${props.borderTop};
-       border-bottom: ${props.borderBottom};
+       border-bottom: ${props.borderBottom}; 
        top: ${props.top};
        left: ${props.left};
        bottom: ${props.bottom};

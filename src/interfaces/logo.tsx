@@ -10,4 +10,6 @@ export interface IIcon{
     bottom?: string
     right?: string
     overflow?: string
+    width?: string
+    height?: string
 }

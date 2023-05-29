@@ -23,6 +23,7 @@ export const Container: React.FC<IContainerProps> = ({
   justifycontent, 
   overflow,
   backDropFilter,
+  border,
   zIndex,
   children}: IContainerProps): JSX.Element => {
  
@@ -32,6 +33,7 @@ export const Container: React.FC<IContainerProps> = ({
         borderTop={borderTop}
         borderBottom={borderBottom}
         position={position}
+        border={border}
         gradient={gradient}
         flexdirection={flexdirection}
         radius={radius}

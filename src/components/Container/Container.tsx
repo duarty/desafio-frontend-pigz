@@ -18,8 +18,12 @@ export const Container: React.FC<IContainerProps> = ({
   borderTop,
   borderBottom,
   alignContent,
+  width,
+  height,
   justifycontent, 
   overflow,
+  backDropFilter,
+  zIndex,
   children}: IContainerProps): JSX.Element => {
  
     return (
@@ -36,6 +40,10 @@ export const Container: React.FC<IContainerProps> = ({
         alignItems={alignItems}
         justifycontent={justifycontent}
         top={top}
+        width={width}
+        height={height}
+        backDropFilter={backDropFilter}
+        zIndex={zIndex}
         overflow={overflow}
         bottom={bottom}
         left={left}

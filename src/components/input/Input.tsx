@@ -8,6 +8,8 @@ export const Input: React.FC<IInputProps> = function({
     border,
     placeholder, 
     fontcolor,
+    width,
+    height,
     fontSize, 
     radius,
     padding}: IInputProps): JSX.Element {
@@ -17,6 +19,8 @@ export const Input: React.FC<IInputProps> = function({
         backgroundcolor={backgroundcolor} 
         placeholder={placeholder}
         fontcolor={fontcolor}
+        width={width}
+        height={height}
         fontSize={fontSize} 
         radius={radius}
         border={border}

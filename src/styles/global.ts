@@ -4,7 +4,10 @@ import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
     html {
         font-size: 62.5%;
+        scroll-behavior: smooth;
     }
+
+
 
     * {
         margin: 0;
@@ -17,10 +20,6 @@ export default createGlobalStyle`
 
     body {
         background: ${props => props.theme.colors.white};  
-        ::-webkit-scrollbar {
-            width: 10px;
-            height: 5px;
-        }
         border-bottom: 5px solid #FF671F;
     }
 

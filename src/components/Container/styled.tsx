@@ -6,7 +6,6 @@ export const DivContainer = styled.div<IContainerProps>`
     ${(props)=> css`
        display: flex;
        flex-direction: ${props.flexdirection};
-       //props.gradient ||props.backgroundcolor
        background: ${props.backgroundcolor};
        border-radius: ${props.radius};
        padding: ${props.padding};
@@ -22,6 +21,10 @@ export const DivContainer = styled.div<IContainerProps>`
        bottom: ${props.bottom};
        right: ${props.right};
        overflow: ${props.overflow};
+       z-index: ${props.zIndex};
+       backdrop-filter: ${props.backDropFilter};
+       width: ${props.width};
+       height: ${props.height};
     `}
 
 `

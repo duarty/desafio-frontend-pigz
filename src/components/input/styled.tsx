@@ -12,14 +12,15 @@ export const InputContainer = styled.input<IInputProps>`
         padding: ${props.padding || 0};
         border: ${props.border};
         border-radius: ${props.radius};
+        width: ${props.width};
+        height: ${props.height}
 
     `}  
     outline: none;
 
 
     &::placeholder {
-        color: ${pigz.fonts.fontInputPlaceholder};
-        
+        color: ${pigz.fonts.fontInputPlaceholder};   
     }
 
     

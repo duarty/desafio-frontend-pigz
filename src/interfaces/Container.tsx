@@ -18,4 +18,8 @@ export interface IContainerProps{
     right?: string
     left?: string
     overflow?:string
+    zIndex?:string
+    width?: string
+    height?: string
+    backDropFilter?: string
 }

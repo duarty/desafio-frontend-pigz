@@ -8,4 +8,6 @@ export interface IInputProps {
     padding?: string
     border?: string
     radius?:string
+    width?:string
+    height?: string
 }

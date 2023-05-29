@@ -9,10 +9,14 @@ export const HeaderPage = () => {
     return (
 
         <Container 
-        backgroundcolor={pigz.colors.white}
+        backgroundcolor={'rgba(255, 255, 255, 0.84)'}
+        backDropFilter={'blur(2rem)'}
         flexdirection={'row'}   
-        padding={'1.4rem'}  
+        padding={'2rem 1.5rem 2rem 1.5rem'}
         justifycontent={'space-between'}
+        position="sticky"
+        top="0rem"
+        zIndex='100'
       >
         <Icon 
           src={PigzOrangeIcon}/>
@@ -22,7 +26,9 @@ export const HeaderPage = () => {
           effect={false} 
           radius={'2rem'} 
           padding={'0.375rem 1.5rem'}
+          boxShadow={'0rem 2rem 2rem rgba(250, 100, 30, 0.682)'}
           fontsize={'1.4rem'}/>
+         
       </Container>
     )
 }

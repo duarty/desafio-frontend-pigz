@@ -1,6 +1,5 @@
 import styled, {css} from 'styled-components'
 import { IContainerProps } from '../../interfaces/Container'
-import pigz from './../../styles/themes/orangeLabs'
 
 export const DivContainer = styled.div<IContainerProps>`
     ${(props)=> css`
@@ -10,11 +9,11 @@ export const DivContainer = styled.div<IContainerProps>`
        border-radius: ${props.radius};
        padding: ${props.padding};
        justify-content: ${props.justifycontent};
-       position: ${props.position || pigz.configs.positionStatic};
+       position: ${props.position};
        margin: ${props.margin};
        align-items: ${props.alignItems};
        align-content: ${props.alignContent};
-       border: ${props.border}
+       border: ${props.border};
        border-top: ${props.borderTop};
        border-bottom: ${props.borderBottom}; 
        top: ${props.top};

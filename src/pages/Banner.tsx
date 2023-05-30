@@ -10,31 +10,37 @@ import PrinterIcon from '../assets/print_black_24dp.svg'
 
 export const BannerPage = () => {
     return (
-    <>
+    <Container
+      flexdirection="column"
+    >
         <Container
         flexdirection={'column'}
+        padding="0rem 2rem 0rem 2rem"
+       
         >
           <Title
             text='Você tem um novo Pigzdido!'
             weight={'700'}
             textAlign={'center'} 
+            padding="4rem"
             fontSize={'3rem'}
             color={pigz.fonts.fontGrey1}  
 
           />
       </Container>
-      <Container padding='1rem'/>
+
       <Container
         flexdirection='column'
-        
         padding='2rem 7rem'
       >
             <Container
               backgroundcolor={pigz.colors.whiteGrey}
               radius='7rem'
               flexdirection='column'  
+              padding="4rem"
+             
             >
-                <Container padding='2rem'/>
+               
                 <Icon 
                   src={StoreFrontIcon}   
                   alignSelf={'center'}              
@@ -42,26 +48,29 @@ export const BannerPage = () => {
                 <Title
                   text='Marketplace'
                   fontSize='2rem'
-                  padding='3rem 0rem 0rem 0rem'
+                  padding='3rem 0rem 2rem 0rem'
                   textAlign={'center'}
                   weight='600'
                 />
                 <Paragraph
                   text={'Pra sua loja vender mais'}
-                  textAlign={'center'}
-                  padding={'1rem 0rem 0rem 0rem'}
+                  textAlign='center'
                   fontSize={'1.75rem'}
+                  padding="1rem"
                 
                 />
-                <Container padding='2rem'/>
+               
             </Container>
-            <Container padding='1rem'/>
+            <Container
+              padding="1.5rem"
+            />
             <Container
               backgroundcolor={pigz.colors.whiteGrey}
               radius='7rem'
               flexdirection='column'
+              padding="4rem"
               >
-                <Container padding='2rem'/>
+                
                 <Icon 
                   src={SmartPhoneIcon}  
                   alignSelf={'center'}               
@@ -76,18 +85,21 @@ export const BannerPage = () => {
                 <Paragraph
                   text={'Fazer um pedido no Pigz'}
                   textAlign={'center'}
-                  padding={'1rem 0rem 0rem 0rem'}
+                  padding="1rem"
                   fontSize={'1.75rem'}
                 />
-                <Container padding='2rem'/>
+        
             </Container>
-            <Container padding='1rem'/>
+            <Container
+              padding="1.5rem"
+            />
             <Container
               backgroundcolor={pigz.colors.whiteGrey}
               radius='7rem'
               flexdirection='column'
+              padding="4rem"
               >
-                <Container padding='2rem'/>
+             
                 <Icon 
                   src={PigzGestaoIcon}   
                   alignSelf={'center'}              
@@ -102,18 +114,21 @@ export const BannerPage = () => {
                 <Paragraph
                   text={'Você no controle, sempre'}
                   textAlign={'center'}
-                  padding={'1rem 0rem 0rem 0rem'}
+                  padding="1rem"
                   fontSize={'1.75rem'}
                 />
-                <Container padding='2rem'/>
+       
             </Container>
-            <Container padding='1rem'/>
+            <Container
+              padding="1.5rem"
+            />
             <Container
               backgroundcolor={pigz.colors.whiteGrey}
               radius='7rem'
               flexdirection='column'
+              padding="4rem"
               >
-                <Container padding='2rem'/>
+           
                 <Icon 
                   src={PrinterIcon}   
                   alignSelf={'center'}             
@@ -128,10 +143,10 @@ export const BannerPage = () => {
                 <Paragraph
                   text={'Personalizáveis'}
                   textAlign={'center'}
-                  padding={'1rem 0rem 0rem 0rem'}
+                  padding="1rem"
                   fontSize={'1.75rem'}
                 />
-                <Container padding='2rem'/>
+            
             </Container>
             <Title
                 text='Tudo que você precisa por apenas R$199/mês'
@@ -148,6 +163,6 @@ export const BannerPage = () => {
                 textAlign='center'
               />       
       </Container>
-    </>
+    </Container>
     )
 }

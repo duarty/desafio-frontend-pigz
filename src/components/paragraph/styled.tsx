@@ -11,7 +11,7 @@ export const ParagraphContainer = styled.p<IParagraphProps>`
         font-weight: ${props.weight};
         display: flex;
         align-items: ${props.alignItems};
-        justify-content:${props.justifyContent}
+        justify-content:${props.justifyContent};
         text-align: ${props.textAlign};
         position: ${props.justifyContent};
     `}
